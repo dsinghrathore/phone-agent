@@ -440,7 +440,7 @@ async def router(websocket, path):
         await twilio_handler(websocket)
 
 def main():
-    server = websockets.serve(router, 'localhost', 5000)
+    server = websockets.serve(router, 'localhost', int(os.getenv('PORT', 5000)))
 
     asyncio.get_event_loop().run_until_complete(server)
     asyncio.get_event_loop().run_forever()
