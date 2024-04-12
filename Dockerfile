@@ -18,7 +18,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Command to run the twilio.py script
-CMD ["python", "twilio.py"]
+CMD ["python", "stream.py"]
 
 # Expose the port the app runs on
 EXPOSE 8080
