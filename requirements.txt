@@ -1,11 +1,9 @@
+twilio
+websockets
+pydub
+numpy
+openai
 flask
 flask-cors
 flask-session
 flask-sock
-gunicorn
-numpy
-openai
-pydub
-requests
-twilio
-httpx
